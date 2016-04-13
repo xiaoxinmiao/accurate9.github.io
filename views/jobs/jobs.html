@@ -1,0 +1,24 @@
+﻿<div class="row zoneSplit"></div>
+<div class="row" ng-controller="jobsCtrl">
+    <div class="col-md-offset-1 col-md-2 sideMenuAndSlideImg zone">
+        <h3><i class="fa fa-list-ul fa-margin" style="color: #d7000f;padding-left:10px;"></i>招贤纳士</h3>
+        <!--<div class="sideMenu">
+            <div ng-repeat="menu in sideMenu" class="qaCategory sideMenuItem" ng-click="changeCategory($index)" style="cursor:pointer;">
+                <a href="#/jobsList/{{$index+1}}">{{menu.name}}</a><i class="fa fa-angle-right pull-right" style="padding-right:35px;"></i>
+            </div>
+        </div>-->
+    </div>
+    <div class="col-md-8 sideMenuAndSlideImg zone" style="overflow-y: scroll;">
+        <div style="padding:30px;">
+            <dl>
+                <dt>
+                    {{jobsCategory.title}}
+                    {{sideMenu.title}}
+                </dt>
+                <hr />
+                <dd ng-bind-html="jobsCategory.content">
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
